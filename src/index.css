@@ -1,0 +1,27 @@
+:root{
+    --violet: hsl(257, 40%, 49%);
+}
+
+body{
+    margin: 0;
+}
+
+#root{
+    width: 100vw;
+    min-height: 100vh;
+
+    background-color: var(--violet);
+    background-image: url('./assets/bg-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media screen and (max-width: 680px) {
+    #root{
+        background-image: url('./assets/bg-mobile.svg');
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 100%;
+    }
+}
